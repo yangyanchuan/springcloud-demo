@@ -1,0 +1,23 @@
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      #ע�����ĵ�ַ
+      defaultZone: http://localhost:8081/eureka
+spring:
+  application:
+    #������ע�����ĵ����� ��ͬ�������Ʋ����ظ�
+    name: cloud-feign
+  data:
+    solr:
+      host: http://127.0.0.1:8085/solr
+#�����۶�������
+feign:
+  hystrix:
+    enabled: true
+
+
+#solr
+ # spring.data.solr.host= http://127.0.0.1:8085/solr
+
